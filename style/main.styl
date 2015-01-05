@@ -247,11 +247,12 @@ body
   justify-content: flex-start;
 
 .goods-list
+  position relative
   max-width 460px
   max-height 430px
   display inline-block
   text-align center
-  margin 5px
+  margin 10px 0 0 10px
   border 1px solid #ededed
   dl
     text-align center
@@ -264,6 +265,10 @@ body
     position relative
     text-align left
     display inline-block
+  .trash
+    position absolute
+    top 15px
+    right 15px
 
 
 .goods-sold
@@ -401,3 +406,29 @@ body
     margin-top -10px
     padding 5px
     font-weight bold
+
+
+.limited-pair
+  width 130px
+  position absolute
+  top 10px
+  left -5px
+
+  p
+    position relative
+    background url("../img/limited-bg.png") no-repeat
+    padding 5px 35px 10px 55px
+    background-size contain
+    color #fff
+    font-size 12px
+    text-align center
+    &:after
+      content ""
+      position absolute
+      top 0
+      left 10px
+      background url("../img/limited-before.png")
+      width 35px
+      height 35px
+    span
+      font-size 14px

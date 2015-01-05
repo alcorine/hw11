@@ -241,11 +241,12 @@ body {
   justify-content: flex-start;
 }
 .goods-list {
+  position: relative;
   max-width: 460px;
   max-height: 430px;
   display: inline-block;
   text-align: center;
-  margin: 5px;
+  margin: 10px 0 0 10px;
   border: 1px solid #ededed;
 }
 .goods-list dl {
@@ -261,6 +262,11 @@ body {
   position: relative;
   text-align: left;
   display: inline-block;
+}
+.goods-list .trash {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 .goods-sold {
   font-size: 20px;
@@ -403,4 +409,31 @@ body {
   margin-top: -10px;
   padding: 5px;
   font-weight: bold;
+}
+.limited-pair {
+  width: 130px;
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+.limited-pair p {
+  position: relative;
+  background: url("../img/limited-bg.png") no-repeat;
+  padding: 5px 35px 10px 55px;
+  background-size: contain;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.limited-pair p:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background: url("../img/limited-before.png");
+  width: 35px;
+  height: 35px;
+}
+.limited-pair p span {
+  font-size: 14px;
 }
